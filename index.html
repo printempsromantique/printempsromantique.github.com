@@ -11,11 +11,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Mr+De+Haviland' rel='stylesheet' type='text/css'>
 		<link href='style.css' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/jquery.jplayer.combo.min.js" />
+		<script type="text/javascript" src="js/jquery.jplayer.combo.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#jquery_jplayer_1").jPlayer({
-					ready: function () {
+					ready: function (event) {
 						$(this).jPlayer("setMedia", {
 							oga: "http://orry.lionel.perso.sfr.fr/media/s7.ogg",
 						});
