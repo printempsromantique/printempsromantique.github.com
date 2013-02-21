@@ -17,8 +17,8 @@
 				$("#jquery_jplayer_1").jPlayer({
 					ready: function (event) {
 						$(this).jPlayer("setMedia", {
-							mp3: "http://dl.dropbox.com/u/29714584/s7.mp3"
-						});
+							mp3: "http://dl.dropbox.com/u/29714584/s6.mp3"
+						}).jPlayer("play");
 					},
 					swfPath: "/js",
 					supplied: "mp3"
@@ -27,14 +27,15 @@
 		</script>
 	</head>
 	<body>
+
+		<div id="jquery_jplayer_1"></div>
+		<div id="jp_container_1">
+			<a href="#" class="jp-play">Play</a>
+			<a href="#" class="jp-pause">Pause</a>
+		</div>
+
 		<div id="content">
 
-			<div id="jquery_jplayer_1"></div>
-			<div id="jp_container_1">
-				<a href="#" class="jp-play">Play</a>
-				<a href="#" class="jp-pause">Pause</a>
-			</div>
-			
 			<ul id="nav">
 				<li>Accueil</li>
 				<li><a href="projet.html">Le projet</a></li>

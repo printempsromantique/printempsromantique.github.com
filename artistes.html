@@ -11,9 +11,31 @@
 		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Mr+De+Haviland' rel='stylesheet' type='text/css'>
 		<link href='style.css' rel='stylesheet' type='text/css'>
+			<script type="text/javascript" src="js/jquery.jplayer.combo.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#jquery_jplayer_1").jPlayer({
+					ready: function (event) {
+						$(this).jPlayer("setMedia", {
+							mp3: "http://dl.dropbox.com/u/29714584/s13.mp3"
+						}).jPlayer("play");
+					},
+					swfPath: "/js",
+					supplied: "mp3"
+				});
+			});
+		</script>
 	</head>
 	<body>
+
+		<div id="jquery_jplayer_1"></div>
+		<div id="jp_container_1">
+			<a href="#" class="jp-play">Play</a>
+			<a href="#" class="jp-pause">Pause</a>
+		</div>
+			
 		<div id="content">
+
 			<ul id="nav">
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="projet.html">Le projet</a></li>

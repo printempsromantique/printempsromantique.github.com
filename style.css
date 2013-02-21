@@ -73,3 +73,9 @@ ul#nav > li {
 }
 a { color: white; }
 a:hover { color: #FC60A7; }
+
+#jp_container_1 {
+	position: fixed;
+	right: 1em;
+	top: 1em;
+}
